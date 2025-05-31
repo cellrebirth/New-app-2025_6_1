@@ -1,0 +1,361 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #2c3e50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button.primary {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+button.primary:hover {
+  background-color: #2980b9;
+}
+
+button.secondary {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+
+button.secondary:hover {
+  background-color: #27ae60;
+}
+
+button.tertiary {
+  background-color: #7f8c8d;
+  color: #ffffff;
+}
+
+button.tertiary:hover {
+  background-color: #95a5a6;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: #ffffff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.graph-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.graph {
+  width: 48%;
+  aspect-ratio: 1;
+  background-color: #34495e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.graph-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.graph-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+}
+
+.graph-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chat-container {
+  background-color: #34495e;
+  border-radius: 5px;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  width: auto;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.bottom-nav-item {
+  width: 40px;
+  height: 40px;
+  background-color: #34495e;
+  border-radius: 50%;
+}
+
+/* 新しいスタイル */
+.ai-chat-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-chat-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.date-time p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.admin-login {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-chat-content {
+  flex: 1;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chat-area {
+  height: 400px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-area .send-button {
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-selector {
+  width: 16.67%; /* 1/6の幅 */
+}
+
+.ai-selector select {
+  width: 100%;
+}
+
+.end-session {
+  width: 25%; /* 1/4の幅 */
+  background-color: #ff4136;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #e1f5fe;
+  align-self: flex-end;
+}
+
+.message.ai {
+  background-color: #f0f4c3;
+}
+
+.message.error {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+}
+
+.message.streaming {
+  opacity: 0.7;
+}
+
+/* 新しく追加したスタイル */
+.loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.options-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 0 1 auto;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: auto;
+}
+
+.option-button:hover {
+  background-color: #2980b9;
+}
+
+.send-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
